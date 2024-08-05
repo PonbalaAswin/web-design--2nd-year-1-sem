@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(80, 76, 71);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+        h2{
+            color:rgb(187, 180, 171) ;
+            text-decoration:solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="3d_1486.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="abst16_1280x960[1].jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="abst21_1600x1200[1].jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="abstero7_1600x1200[1].jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="amazing-scene-wallpaper-1280x960-0911082.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="Ao-Nang-Krabi-Thailand-bay-ocean-boat-rocks-mountains_1600x900.jpg" alt="THANKYOU">
+            <h2>Thank You</h2>
+        </div>
+    </div>
+</body>
+</html>
